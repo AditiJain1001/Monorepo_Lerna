@@ -1,0 +1,19 @@
+{
+  "version": "8.0.0",
+  "devDependencies": {
+    "learna": "^8.0.0",
+    "lerna": "^8.0.0"
+  },
+  "scripts": {
+    "start": "lerna run start --scope={web-client,server-api}",
+    "test": "lerna run test --scope=web-client",
+    "new-version": "lerna version --conventional-commit --yes",
+    "diff": "lerna diff"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
